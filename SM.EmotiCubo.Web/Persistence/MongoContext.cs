@@ -26,14 +26,8 @@ namespace SM.EmotiCubo.Web.Persistence
 
         // public GridFSBucket ImagesBucket { get; set; } //  ImagesBucket = new GridFSBucket(Database);
 
-        // private const string defaultMongoDbUrl = "mongodb://localhost/?connectTimeoutMS=300000";
-        // private const string defaultMongoDbUrl = "mongodb://127.0.0.1:27017";
-        private const string defaultMongoDbUrl = "mongodb://192.168.1.131:27017";
+        private const string defaultMongoDbUrl = "mongodb://localhost";
 
-
-        // private const string defaultMongoDbUrl = "mongodb://127.0.0.1";
-        // private const string defaultMongoDbUrl = "mongodb://127.0.0.1/?connectTimeoutMS=30000";
-        // private const string defaultMongoDbUrl = "mongodb://127.0.0.1:27017/?connectTimeoutMS=30000";
         public MongoContext(string mongoDbUrl = defaultMongoDbUrl)
 		{
 			if (String.IsNullOrWhiteSpace(mongoDbUrl)) {
