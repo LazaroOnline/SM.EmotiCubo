@@ -6,7 +6,7 @@
 		"@progress/kendo-ui": "^2020.2.617",
 		"bootstrap": "^4.5.0",
 		"jquery": "^3.5.1",
-		"knockout": "^3.5.1",
+		"knockout": "^3.5.0",
 		"knockout-kendo": "^0.10.0"
 	},
 	"devDependencies": {
