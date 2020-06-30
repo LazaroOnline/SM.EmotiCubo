@@ -20,15 +20,16 @@ namespace SM.EmotiCubo.Web.Controllers
     [Route("api/[controller]")]
     public class SessionController : Controller
     {
-		private AppSettings AppSettings { get; set; }
+		private AppSettings _appSettings { get; set; }
 		private SessionService sessions { get; set; }
 
 		public SessionController(IOptions<AppSettings> settings)
 		{
-			AppSettings = settings.Value;
-			var sessionRepository = new SessionRepository(AppSettings.MongoDbUrl);
+			_appSettings = settings.Value;
+			var sessionRepository = new SessionRepository(_appSettings.MongoDbUrl);
 			sessions = new SessionService(sessionRepository);
 		}
+
 		// For BI export demo
 		// $.get("/api/Session/Get");
 		// GET: api/Session
@@ -114,45 +115,5 @@ namespace SM.EmotiCubo.Web.Controllers
 			sessions.AddEmocion(sesionActual.Id, emocionAlumno);
 			Console.WriteLine("Emocion: " + emocionAlumno.Id + " - " + emocionAlumno.Emocion);
 		}
-		/*
-		// PUT: api/Session/5
-		public void Put([FromBody]EmocionAlumnoPost emocionAlumnoPost)
-		{
-		}
-		*/
-
-		/*
-		// GET api/values
-		[HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
-		*/
 	}
 }
