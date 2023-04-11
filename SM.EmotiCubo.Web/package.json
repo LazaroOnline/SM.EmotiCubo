@@ -3,18 +3,18 @@
 	"name": "sm.emoticubo.web",
 	"private": true,
 	"dependencies": {
-		"@progress/kendo-ui": "^2020.2.617",
-		"bootstrap": "^4.5.0",
-		"jquery": "^3.5.1",
+		"@progress/kendo-ui": "^2023.1.314",
+		"bootstrap": "^5.2.3",
+		"jquery": "^3.6.4",
 		"knockout": "^3.5.1",
 		"knockout-kendo": "^0.10.0"
 	},
 	"devDependencies": {
-		"gulp": "^3.9.1",
-		"gulp-concat": "2.6.1",
-		"gulp-uglify": "3.0.0",
-		"gulp-sourcemaps": "2.6.4",
-		"del": "3.0.0",
-		"run-sequence": "2.2.1"
+		"del": "^7.0.0",
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-uglify": "^3.0.2",
+		"run-sequence": "^2.2.1"
 	}
 }

@@ -36,3 +36,17 @@ Run the docker-compose file, enter the login page and add some data from the bro
  fetch("/api/Session/Save/1");
 ```
 
+## Update npm packages
+```
+npm i @progress/kendo-ui@latest
+npm i bootstrap@latest
+npm i jquery@latest
+npm i knockout@latest
+npm i knockout-kendo@latest
+npm i -D gulp@latest
+npm i -D gulp-concat@latest
+npm i -D gulp-uglify@latest
+npm i -D gulp-sourcemaps@latest
+npm i -D del@latest
+npm i -D run-sequence@latest
+```
