@@ -1,9 +1,9 @@
-﻿var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
-var del = require('del');
-var config = require('./gulp-config.js')();
+﻿const gulp = require('gulp');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+const del = require('del');
+const config = require('./gulp-config.js')();
 
 
 // gulp.task('default', ['html', 'css', 'js']);
@@ -27,7 +27,7 @@ gulp.task('clean-css', function () {
 	return del(config.dest.css);
 });
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-var runSequence = require('run-sequence');
+const runSequence = require('run-sequence');
 gulp.task('build-js', ['clean-js'], function () {
 	// Minify and copy all JavaScript (except vendor scripts) 
 	// with sourcemaps all the way down 
@@ -44,8 +44,8 @@ gulp.task('build-js', ['clean-js'], function () {
 		.pipe(gulp.dest(config.dest.js)); // 'build/js'
 });
 
-var FILTRO_TODOS_ARCHIVOS = '/**/*.*';
-var NODE_MODULES_PATH = './node_modules';
+const FILTRO_TODOS_ARCHIVOS = '/**/*.*';
+const NODE_MODULES_PATH = './node_modules';
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 gulp.task('watch', ['watch-js', 'watch-css']);

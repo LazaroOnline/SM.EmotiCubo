@@ -1,7 +1,7 @@
 
 # SM EmotiCubo
 
-This project was done by me in my free time, as part of a Research & Development project initiative from [Ediciones SM](https://www.grupo-sm.com).  
+This project was done by me (Lazaro) in my free time, as part of a Research & Development project initiative from [Ediciones SM](https://www.grupo-sm.com).  
 
 ## Experiment
 The project consist of a new way for school teachers or psychologist to interact with students/patients under ages of 4-6 years old.  
@@ -11,9 +11,28 @@ It is a subtle way for kids to express their feelings without needing words to o
 
 
 ## Technology
-The cube is a physical IoT connected device that sends over WiFi the selected emotion (face looking up) to a backend server when a button is pressed by the teacher.  
-Then the http request is registered by this repository's back-end API and stored into a Mongo DB.
+The cube is a physical IoT connected device that sends over WiFi the selected emotion (face looking up) to a back-end server when a button is pressed by the teacher.  
+Then the HTTP request is registered by this repository's back-end API and stored into a MongoDB.
 
 This repository serves 2 purposes:
-- Backend API for the IoT connected cube.
+- BackEnd API for the IoT connected cube.
 - Web page for teachers to view and manage their students emotions, see statistics and possibly anonymized results when working with groups.
+
+
+## Requirements
+- [DotNet SDK](https://dotnet.microsoft.com/download) v6
+- [NodeJs](https://nodejs.org/) (tested with v19)
+- [MongoDB](https://www.mongodb.com/try/download/community) v6
+- [Docker](https://docs.docker.com/desktop/install/windows-install/) Engine 17.09.0+
+
+## How to run
+Run the docker-compose file, enter the login page and add some data from the browser's developer tool's console with this js:
+```js
+ fetch("/api/Session/Save/3");
+ fetch("/api/Session/Save/3");
+ fetch("/api/Session/Save/2");
+ fetch("/api/Session/Save/1");
+ fetch("/api/Session/Save/1");
+ fetch("/api/Session/Save/1");
+```
+

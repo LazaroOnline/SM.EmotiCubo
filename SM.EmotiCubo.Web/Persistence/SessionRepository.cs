@@ -35,7 +35,7 @@ namespace SM.EmotiCubo.Web.Persistence
 				.ToList();
 		}
 
-		//public Sesion Get(ObjectId id)
+		//public Session Get(ObjectId id)
 		public Sesion Get(string sesionId)
 		{
 			//return Context.Sesiones.AsQueryable().Where(s => s.Id == id).FirstOrDefault();

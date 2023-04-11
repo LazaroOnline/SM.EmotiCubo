@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SM.EmotiCubo.Web", "SM.EmotiCubo.Web\SM.EmotiCubo.Web.csproj", "{FDFD4286-7E1F-4E18-AFC8-B5C949FDB066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SM.EmotiCubo.Web", "SM.EmotiCubo.Web\SM.EmotiCubo.Web.csproj", "{FDFD4286-7E1F-4E18-AFC8-B5C949FDB066}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{50AC27DC-18C2-4E62-80BA-B80B8802BD09}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9645F438-6165-4E7F-A82D-77F384B04C97}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

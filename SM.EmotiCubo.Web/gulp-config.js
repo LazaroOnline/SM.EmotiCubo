@@ -1,5 +1,5 @@
 ﻿module.exports = function () {
-	var config = {
+	const config = {
 		src: {
 			js: ['node_modules/**/*.js', '!**/*Spec.js']
 			,css: ['']

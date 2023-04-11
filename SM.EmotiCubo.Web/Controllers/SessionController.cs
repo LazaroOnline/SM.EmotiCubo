@@ -45,7 +45,6 @@ namespace SM.EmotiCubo.Web.Controllers
 			return sessions.GetByCubo(cuboId);
 		}
 
-		//  
 		[HttpGet("BI")]
 		public IEnumerable<EmocionAlumnoBI> GetBI()
 		{
@@ -92,7 +91,7 @@ namespace SM.EmotiCubo.Web.Controllers
             _post(emocionAlumnoPost);
         }
 
-        // GET: /api/Session/Save/2         $.get("/api/Session/Save/3");
+        // GET: /api/Session/Save/2         fetch("/api/Session/Save/3");
         [HttpGet("Save/{emocionId}")]
         public void Save(int emocionId)
         {
